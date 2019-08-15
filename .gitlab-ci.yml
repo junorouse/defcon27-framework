@@ -1,0 +1,11 @@
+test:
+  image: python:3.7-stretch
+  before_script:
+    - pip install -r requirements.txt
+  script:
+    - export SETTING_PATH=`pwd`/basic_settings.py
+    - export CONF_PATH=`pwd`/conf_example2.json
+    - python3.7 -m unittest discover exm.tests -v
+  only:
+    - merge_requests
+

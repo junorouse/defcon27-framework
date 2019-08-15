@@ -1,0 +1,7 @@
+celery==4.3.0
+redis==3.2.1
+pylint==2.3.1
+APScheduler==3.6.1
+dhooks==1.1.0
+verboselogs==1.7
+coloredlogs==10.0
